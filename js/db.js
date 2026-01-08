@@ -221,7 +221,7 @@ function removeExerciseFromRoutine(routineId, exerciseId) {
  * Log the completion of a routine
  * @param {string} routineId - The routine ID
  * @param {string} routineName - The routine name
- * @param {number} duration - Duration in minutes
+ * @param {number} duration - Duration in seconds
  * @returns {Object} The progress entry for today
  * @throws {Error} If required parameters are missing
  */
