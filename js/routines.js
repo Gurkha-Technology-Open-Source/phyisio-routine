@@ -439,7 +439,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 stopTimer();
                 try {
                     if (db && typeof db.logRoutineCompletion === 'function') {
-                        db.logRoutineCompletion(routine.id, routine.name, Math.ceil(seconds / 60));
+                        db.logRoutineCompletion(routine.id, routine.name, Math.floor(seconds / 60));
                         showToast('Routine Complete', `You finished "${routine.name}"!`);
                     }
                 } catch (error) {
